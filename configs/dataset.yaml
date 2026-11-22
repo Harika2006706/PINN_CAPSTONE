@@ -1,0 +1,12 @@
+dataset:
+  name: "ODP-DLHM-Subset"
+  source_csv: "references/ODP-DLHM-Database.csv"
+  wavelength: 0.633
+  L_value: 18.80
+  samples:
+    - "1_Cheek_cells"
+    - "2_Circle"
+    - "3_SM600_Fiber"
+    - "5_Honeybee_Wing"
+    - "8_Spirogyra"
+  manifest_output: "data/odp_manifest.csv"

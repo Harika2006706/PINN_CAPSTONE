@@ -1,0 +1,83 @@
+# ==============================================================================
+# Git Ignore Configuration for Physics-Informed Neural Network (PINN) DLHM
+# Keeps source code alone and excludes all huge datasets, weights, caches & dumps
+# ==============================================================================
+
+# 1. Datasets & Raw Image Holograms (50+ GB)
+data/
+data/**
+Representative holograms/
+Representative holograms/**
+Hologram_Classification_10Class/data/
+Hologram_Classification_10Class/data/**
+
+# All image formats
+**/*.bmp
+**/*.tif
+**/*.tiff
+**/*.png
+**/*.jpg
+**/*.jpeg
+**/*.gif
+**/*.zip
+**/*.tar
+**/*.gz
+**/*.7z
+
+# 2. PyTorch Model Weights, Checkpoints & Binary Tensors
+**/*.pth
+**/*.pt
+**/*.bin
+**/*.onnx
+**/*.pkl
+**/*.pickle
+new_retrained_weights/
+new_retrained_weights/**
+results/
+results/**
+Hologram_Classification_10Class/classifiers/
+Hologram_Classification_10Class/classifiers/**
+Hologram_Classification_10Class/features/
+Hologram_Classification_10Class/features/**
+Hologram_Classification_10Class/results/
+Hologram_Classification_10Class/results/**
+
+# 3. Legacy Archives, Backups & Scratch Work
+legacy_archives/
+legacy_archives/**
+backups_pinn/
+backups_pinn/**
+scratch/
+scratch/**
+research_logs/
+research_logs/**
+
+# 4. Large Documents & Intermediate Text Audits
+**/*.docx
+**/*.pdf
+**/*.pptx
+data_tree.txt
+project_inventory.txt
+PROJECT_STRUCTURE.txt
+**/*.tmp
+
+# 5. Python Caches, Virtual Environments & Notebook Checkpoints
+__pycache__/
+**/__pycache__/**
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/**
+
+# 6. IDE & OS Metadata
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
